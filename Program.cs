@@ -10,23 +10,29 @@ namespace Module_4
 
             var color = Console.ReadLine();
 
-            if (color == "red")
+            switch (color)
             {
-                Console.BackgroundColor = ConsoleColor.Red;
-                Console.ForegroundColor = ConsoleColor.Black;
-                Console.WriteLine("Ваш люимый цвет красный");
-            }
-            else if (color == "green")
-            {
-                Console.BackgroundColor = ConsoleColor.Green;
-                Console.ForegroundColor = ConsoleColor.Black;
-                Console.WriteLine("Ваш люимый цвет зелёный");
-            }
-            else
-            {
-                Console.BackgroundColor = ConsoleColor.Cyan;
-                Console.ForegroundColor = ConsoleColor.Black;
-                Console.WriteLine("Ваш люимый цвет голубой");
+                case "red":
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.WriteLine("Ваш любимый цвет красный");
+                    break;
+                case "green":
+                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.WriteLine("Ваш любимый цвет зелёный");
+                    break;
+                case "cyan":
+                    Console.BackgroundColor = ConsoleColor.Cyan;
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.WriteLine("Ваш любимый цвет голубой");
+                    break;
+                default:
+                    Console.BackgroundColor = ConsoleColor.Yellow;
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Ваш любимый цвет жёлтый");
+                    break;
+
             }
             Console.ReadKey();
         }
