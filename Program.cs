@@ -28,7 +28,6 @@ namespace Module_4
                 Console.ForegroundColor = ConsoleColor.Black;
                 Console.WriteLine("Ваш люимый цвет голубой");
             }
-
             Console.ReadKey();
         }
     }
